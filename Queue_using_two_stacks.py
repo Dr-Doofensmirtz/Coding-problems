@@ -4,26 +4,19 @@
 
 
 class queue:
-
 	def __init__(self):
-
 		self.s1 = list()  	#main stack	
 		self.s2 = list()	#auxiliary stack
 
 	def __repr__(self):
-
 		return str(self.s1)
 
 	def enqueue(self,value):
-
 		self.s1.append(value)  	#insert the value in main stack
 
 	def dequeue(self):
-
 		if not self.s1:		#if queue is empty return 
 			return None
-		
-
 		while self.s1:         
 			self.s2.append(self.s1.pop())  #push every value from s1 to s2. if s1=[1,2,3] then s2 becomes [3,2,1]
 
@@ -43,6 +36,7 @@ q.enqueue(4)
 assert q.s1 == [1,2,3,4]
 
 q.dequeue()
+assert q.s1 == [2,3,4]
 q.enqueue(6)
 
 assert q.s1 == [2,3,4,6]
