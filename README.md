@@ -1,7 +1,7 @@
 # Coding-problems
-Various python coding prolem
+Various python coding problem
 
-# Queue_using_two_stacks: Problem 53 of Daily Coding Problem:
+# Queue_using_two_stacks: Daily Coding Problem #53:
 
 Implement a queue using two stacks. Recall that a queue is a FIFO (first-in, first-out)
 data structure with the following methods: enqueue, which inserts an element into the queue, and dequeue, which removes it.
